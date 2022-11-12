@@ -19,6 +19,9 @@ RUN npm run build
 # specify nginx image
 FROM nginx
 
+# Expose the port so elastic beanstalk knows
+EXPOSE 80
+
 # copy the content of build. 
 
 # npm run build will create a build folder in the WORKDIR
